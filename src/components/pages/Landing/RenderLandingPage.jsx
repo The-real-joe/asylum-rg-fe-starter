@@ -73,6 +73,13 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+        <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
+          <div className="reead-more-btm">
+            <button type="button" className="ant-btn ant-btn-default">
+              <span>Download the Data</span>
+            </button>
+          </div>
+        </a>
       </div>
 
       <div className="middle-section">
@@ -123,6 +130,21 @@ function RenderLandingPage(props) {
             </div>
           </div>
         </div>
+        <a
+          href="https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="view-more-data-btn-container">
+            <button
+              type="button"
+              className="ant-btn ant-btn-default"
+              ant-click-animating-without-extra-node="false"
+            >
+              <span>Read More</span>
+            </button>
+          </div>
+        </a>
 
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
