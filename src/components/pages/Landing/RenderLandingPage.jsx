@@ -75,7 +75,11 @@ function RenderLandingPage(props) {
         </Button>
         <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
           <div className="reead-more-btm">
-            <button type="button" className="ant-btn ant-btn-default">
+            <button
+              type="button"
+              className="ant-btn ant-btn-default"
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+            >
               <span>Download the Data</span>
             </button>
           </div>
@@ -140,6 +144,7 @@ function RenderLandingPage(props) {
               type="button"
               className="ant-btn ant-btn-default"
               ant-click-animating-without-extra-node="false"
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
             >
               <span>Read More</span>
             </button>
