@@ -41,10 +41,31 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+.graphs-container {
+    display: flex;
+  }
+  
+  .graph-item {
+    justify-content:space-between;
+    flex: 1;
+    text-align: center;
+  }
 
+  .graph-item img {
+    width: 50%;
+    height:auto;
+    
+  }
+  .graph-item:nth-child(2) img {
+    width:30%;
+    height:auto;
+  }
+
+  
+  .image-caption {
+    margin-top: 10px; /* Add space between the image and the caption */
+    margin-bottom: 50px;
+  }
 .view-more-data-btn-container {
     height: 44px;
     width: 180px;
@@ -75,9 +96,54 @@
     font-size: 1.4rem;
 }
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
+.bottom-section {
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+margin-bottom: 5%;
+position: relative
+}
+
+.bottom-section h1 {
+    font-family: "moneta";
+    font-size: 3.5rem;
+    margin-bottom: 10%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+    padding: 10px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    padding:100px;
+}
+
+.first-data-container {
+    width: 30%;
+    text-align: center;
+    padding:100px;
+
+}
+
+.second-data-container {
+    width: 30%;
+    text-align: center;
+    padding:100px;
+
+}
+
+.third-data-container {
+    width: 30%;
+    text-align: center;
+    padding:100px;
+
+}
 
 .back-to-top {
     width: 8%;
