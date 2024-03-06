@@ -65,7 +65,7 @@ function RenderLandingPage(props) {
         </div>
       </div>
 
-      <div className="view-more-data-btn-container">
+      <div className="button-container">
         <Button
           type="default"
           style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
@@ -73,17 +73,17 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
-        <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
-          <div className="reead-more-btm">
-            <button
-              type="button"
-              className="ant-btn ant-btn-default"
-              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-            >
+        <Button
+          type="button"
+          className="ant-btn ant-btn-default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+        >
+          <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
+            <div className="read-more-btn">
               <span>Download the Data</span>
-            </button>
-          </div>
-        </a>
+            </div>
+          </a>
+        </Button>
       </div>
 
       <div className="middle-section">

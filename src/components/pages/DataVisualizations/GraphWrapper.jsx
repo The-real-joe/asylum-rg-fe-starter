@@ -72,6 +72,26 @@ function GraphWrapper(props) {
                                    -- Mack 
     
     */
+    const url = process.env.REACT_APP_API_URI;
+
+    const year_start = years[0];
+    const year_end = years[1];
+
+    axios
+      .get(`${url}/summary`, {
+        params: {
+          from: year_start,
+          to: year_end,
+          office: office,
+        },
+      })
+      .then(res => {
+        console.log(view, office, res.data);
+        stateSettingCallback(view, office, res.data);
+      })
+      .catch(err => {
+        console.error(err);
+      });
 
     if (office === 'all' || !office) {
       axios
